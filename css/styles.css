@@ -608,6 +608,10 @@ section.our-team {
   padding-left: 0;
   border-bottom: 1px solid #eeeeee;
 }
+.portfolio-item:hover .overlay,
+.portfolio-item:focus .overlay {
+  transform: translatey(0);
+}
 .portfolio-item a {
   display: block;
   transition: box-shadow 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
@@ -620,10 +624,6 @@ section.our-team {
 .portfolio-image {
   position: relative;
   overflow: hidden;
-}
-.portfolio-item:hover .overlay,
-.portfolio-item:focus .overlay {
-  transform: translatey(0);
 }
 .overlay {
   position: absolute;
