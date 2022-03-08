@@ -431,17 +431,17 @@ textarea::placeholder {
 .properties {
   display: flex;
 }
-.properties li {
+.properties-item {
   width: 270px;
   justify-content: space-between;
   margin-right: 30px;
 }
-.properties li:last-child {
+.properties-item:last-child {
   margin-right: 0;
 }
-li .properties-content {
+/* li .properties-content {
   justify-content: flex-start;
-}
+} */
 .properties-title {
   margin-bottom: 10px;
 
