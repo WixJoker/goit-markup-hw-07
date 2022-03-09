@@ -19,40 +19,4 @@ body {
   background-color: $primary-background-color;
   color: $primary-text-color;
 }
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-left: 0px;
-}
-a:hover,
-a:focus {
-  color: $accent-color;
-}
-a {
-  text-decoration: none;
-}
-ul {
-  list-style: none;
-}
+
