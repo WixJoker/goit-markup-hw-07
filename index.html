@@ -47,39 +47,47 @@
             </div>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
-                    <button data-modal-close type="button" class="modal__close-button"><svg class="modal__icon"><use href="./images/icons.svg#icon-vector"></use></svg></button>
-                    <form class="js-speaker-form">
-                        <p class="modal__window-title">Оставьте свои данные, мы вам перезвоним</p>
-                        <div class="modal__box">
-                            <label class="modal__window-subtitle" for="user_name">Имя</label>
-                            <input class="modal__input" id="user_name" type="text" name="name" placeholder=" ">
-                            <svg class="modal__input-icon" width="18" height="18"><use href="./images/icons.svg#icon-person-black"></use></svg>
+                    <button data-modal-close type="button" class="close-modal-button"><svg class="modal-icon">
+                            <use href="./images/icons.svg#icon-vector"></use>
+                        </svg></button>
+                    <form class="modal-window-form js-speaker-form">
+                        <p class="modal-window-title">Оставьте свои данные, мы вам перезвоним</p>
+                        <div class="modal-box">
+                            <label class="modal-window-subtitle" for="user_name">Имя</label>
+                            <input class="modal-input" id="user_name" type="text" name="name" placeholder=" ">
+                            <svg class="modal-input-icon" width="18" height="18">
+                                <use href="./images/icons.svg#icon-person-black"></use>
+                            </svg>
                         </div>
-                        <div class="modal__box">
-                            <label class="modal__window-subtitle" for="user_phone">Телефон</label>
-                            <input class="modal__input" id="user_phone" type="tel" name="phone" placeholder=" ">
-                            <svg class="modal__input-icon" width="18" height="18"><use href="./images/icons.svg#icon-phone-black"></use></svg>
+                        <div class="modal-box">
+                            <label class="modal-window-subtitle" for="user_phone">Телефон</label>
+                            <input class="modal-input" id="user_phone" type="tel" name="phone" placeholder=" ">
+                            <svg class="modal-input-icon" width="18" height="18">
+                                <use href="./images/icons.svg#icon-phone-black"></use>
+                            </svg>
                         </div>
-                        <div class="modal__box">
-                            <label class="modal__window-subtitle" for="user_modal_email">Почта</label>
-                            <input class="modal__input" id="user_modal_email" type="email" name="email" placeholder=" ">
-                            <svg class="modal__input-icon" width="18" height="18"><use href="./images/icons.svg#icon-email-black"></use></svg>
+                        <div class="modal-box">
+                            <label class="modal-window-subtitle" for="user_modal_email">Почта</label>
+                            <input class="modal-input" id="user_modal_email" type="email" name="email" placeholder=" ">
+                            <svg class="modal-input-icon" width="18" height="18">
+                                <use href="./images/icons.svg#icon-email-black"></use>
+                            </svg>
                         </div>
-                        <div class="modal__box comment">
-                            <label class="modal__window-subtitle">Комментарий</label>
-                            <textarea class="textarea" placeholder="Введите текст"></textarea>
+                        <div class="modal-box comment">
+                            <label class="modal-window-subtitle">Комментарий</label>
+                            <textarea placeholder="Введите текст"></textarea>
                         </div>
-                        <div class="modal__consent-box">
-                            <label class="modal__window-consent">
-                                <input class="modal__checkbox" type="checkbox" name="checkbox"/>
-                                <span class="modal__icon-check-box"></span>Соглашаюсь с рассылкой и принимаю <a class="modal__agreement-link" href="#">Условия договора</a>
+                        <div class="modal-consent-box">
+                            <label class="modal-window-consent">
+                                <input class="checkbox" type="checkbox" name="checkbox" />
+                                <span class="icon-check-box"></span>Соглашаюсь с рассылкой и принимаю <a class="agreement-link"
+                                    href="#">Условия договора</a>
                             </label>
                         </div>
-                            <button class="modal__window-submit-button" type="submit">Отправить</button>
+                        <button class="modal-window-submit-button" type="submit">Отправить</button>
                     </form>
                 </div>
-            </div>
-        </section>
+            </div>        </section>
         <!-- КАЧЕСТВА -->
         <section class="section section-properties">
             <div class="container">
