@@ -12,7 +12,7 @@
   background: rgba(0, 0, 0, 0.5);
   visibility: visible;
   opacity: 1;
-  transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
+  transition: opacity 250ms $timing-function, visibility 250ms $timing-function;
 }
 .modal {
   position: absolute;
@@ -34,13 +34,13 @@
   left: 490px;
   top: 8px;
   border-radius: 50%;
-  background: #ffffff;
+  background: $primary-background-color;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
 .close-modal-button:hover,
 .close-modal-button:focus {
-  fill: accent-color;
+  fill: $accent-color;
   border-color: $accent-color;
 }
 .modal-icon {
@@ -104,7 +104,7 @@ textarea {
 }
 .modal-input-icon:hover,
 .modal-input-icon:focus {
-  fill: accent-color;
+  fill: $accent-color;
   cursor: pointer;
 }
 .modal-input:hover + .modal-input-icon {

@@ -10,6 +10,8 @@ $hero-background-color: rgba(47, 48, 58, 0.4);
 $input-field-color: #afb1b8;
 $logo-color: #000000;
 $portfolio-item-border-color: #eeeeee;
+$header-border-bottom-color: #ececec;
+$client-logo-color: #afb1b8;
 $logo-font-family: Raleway, sans-serif;
 $secondary-letter-spacing: 0.06em;
 $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -20,4 +22,3 @@ body {
   background-color: $primary-background-color;
   color: $primary-text-color;
 }
-

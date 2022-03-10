@@ -24,7 +24,7 @@ footer {
   letter-spacing: inherit;
   color: $primary-background-color;
 
-  transition: transform 250ms var(--timing-function);
+  transition: transform 250ms $timing-function;
 }
 .footer-address,
 .footer-contacts {
@@ -34,7 +34,7 @@ footer {
   letter-spacing: inherit;
   color: $primary-background-color;
 
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color 250ms $timing-function;
 }
 .footer-info li:not(:last-child) {
   margin-bottom: 9px;
@@ -73,7 +73,7 @@ footer {
   border-radius: 50%;
   align-items: center;
 
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color 250ms $timing-function;
 }
 .footer-social-media-icons li:not(:last-child) {
   margin-right: 10px;

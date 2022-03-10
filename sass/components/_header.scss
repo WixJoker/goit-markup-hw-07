@@ -7,13 +7,13 @@
   color: $logo-color;
   margin-right: 93px;
 
-  transition: color 250ms var(--timing-function);
+  transition: color 250ms $timing-function;
 }
 .web-word {
   color: $accent-color;
 }
 .header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid $header-border-bottom-color;
   padding-top: 25px;
   padding-bottom: 25px;
 }
