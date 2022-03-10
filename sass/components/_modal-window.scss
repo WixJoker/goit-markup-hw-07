@@ -101,14 +101,16 @@ textarea {
   position: absolute;
   top: 30px;
   left: 12px;
-}
-.modal-input-icon:hover,
-.modal-input-icon:focus {
-  fill: $accent-color;
-  cursor: pointer;
-}
-.modal-input:hover + .modal-input-icon {
-  fill: $accent-color;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    cursor: pointer;
+  }
+
+  .modal-input:hover + & {
+    fill: $accent-color;
+  }
 }
 .checkbox {
   position: absolute;
@@ -119,6 +121,18 @@ textarea {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+
+  &:focus + .icon-check-box {
+    border-color: $accent-color;
+  }
+  &:checked + .icon-check-box {
+    background-color: $accent-color;
+    background-image: url('../images/icon_check.svg');
+    background-size: contain;
+    background-origin: border-box;
+    border-color: $accent-color;
+    background-position: center;
+  }
 }
 .icon-check-box {
   display: block;
@@ -127,17 +141,6 @@ textarea {
   border: 1px solid $title-color;
   border-radius: 4px;
   margin-right: 8px;
-}
-.checkbox:focus + .icon-check-box {
-  border-color: $accent-color;
-}
-.checkbox:checked + .icon-check-box {
-  background-color: $accent-color;
-  background-image: url('../images/icon_check.svg');
-  background-size: contain;
-  background-origin: border-box;
-  border-color: $accent-color;
-  background-position: center;
 }
 .modal-consent-box input:checked {
   color: $accent-color;
@@ -175,10 +178,11 @@ textarea {
   text-align: center;
   letter-spacing: 0.06em;
   color: $primary-background-color;
-}
-.modal-window-submit-button:hover,
-.modal-window-submit-button:focus {
-  background-color: $secondary-accent-color;
+
+  &:hover,
+  &:focus {
+    background-color: $secondary-accent-color;
+  }
 }
 textarea::placeholder {
   top: 12px;
