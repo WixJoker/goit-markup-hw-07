@@ -1,3 +1,9 @@
+body {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  background-color: $primary-background-color;
+  color: $primary-text-color;
+}
 html {
   box-sizing: border-box;
 }

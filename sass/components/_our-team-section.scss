@@ -70,5 +70,5 @@ section.our-team {
   border-radius: 50%;
   align-items: center;
   color: $input-field-color;
-  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
+  transition: background-color 250ms $timing-function, color 250ms timing-function;
 }
