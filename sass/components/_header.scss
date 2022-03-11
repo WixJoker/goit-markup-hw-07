@@ -24,22 +24,24 @@
 .site-nav {
   display: flex;
   align-items: center;
+
+  & .header-link.current {
+    color: $accent-color;
+  }
 }
-.header-links-list {
+.header__links-list {
   display: flex;
   align-items: center;
 }
 .header-contacts:last-child {
   margin-right: 0;
 }
-.header-links-list li {
+.header__links-list-item {
   margin-right: 50px;
-}
-.header-links-list li:last-child {
-  margin-right: 0;
-}
-.site-nav .header-link.current {
-  color: $accent-color;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 .smartphone-icon,
 .envelope-icon {

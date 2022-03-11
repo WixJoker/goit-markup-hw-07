@@ -2,14 +2,15 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-.our-team__image:last-child,
-.our-team__image-description:last-child {
-  margin-right: 0;
-}
-.our-team__image,
-.our-team__image-description {
-  margin-right: 30px;
+
+  &:last-child,
+  .our-team__image-description:last-child {
+    margin-right: 0;
+  }
+  &,
+  .our-team__image-description {
+    margin-right: 30px;
+  }
 }
 .our-team__image-description {
   background-color: $primary-background-color;
@@ -43,25 +44,21 @@ section.our-team {
   display: flex;
   justify-content: center;
 }
-.social-media-icons li {
+.social-media-icons__item {
   width: 44px;
   height: 44px;
   fill: currentColor;
-}
-.social-media-icons li:not(:last-child) {
-  margin-right: 10px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 .social-icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
 }
-.social-media-icons a:hover,
-.social-media-icons a:focus {
-  background-color: $accent-color;
-  color: $primary-background-color;
-}
-.social-media-icons li a {
+.social-media-icons__link {
   display: inline-flex;
   background-color: $primary-background-color;
   width: 100%;
@@ -71,4 +68,10 @@ section.our-team {
   align-items: center;
   color: $input-field-color;
   transition: background-color 250ms $timing-function, color 250ms timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $primary-background-color;
+  }
 }

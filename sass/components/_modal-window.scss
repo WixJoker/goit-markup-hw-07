@@ -1,8 +1,3 @@
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
 .backdrop {
   position: fixed;
   top: 0;
@@ -13,6 +8,12 @@
   visibility: visible;
   opacity: 1;
   transition: opacity 250ms $timing-function, visibility 250ms $timing-function;
+
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 .modal {
   position: absolute;
@@ -26,7 +27,7 @@
   border-radius: 4px;
   padding: 40px;
 }
-.close-modal-button {
+.modal__close-button {
   cursor: pointer;
   position: absolute;
   width: 30px;
@@ -37,17 +38,18 @@
   background: $primary-background-color;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    border-color: $accent-color;
+  }
 }
-.close-modal-button:hover,
-.close-modal-button:focus {
-  fill: $accent-color;
-  border-color: $accent-color;
-}
-.modal-icon {
+.modal__icon {
   width: 11px;
   height: 11px;
 }
-.modal-window-title {
+.modal__window-title {
   font-weight: bold;
   font-size: 20px;
   line-height: 1.15;
@@ -57,7 +59,7 @@
 
   margin-bottom: 12px;
 }
-.modal-input {
+.modal__input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -75,21 +77,21 @@ textarea {
   border-radius: 4px;
   resize: none;
 }
-.modal-box {
+.modal__box {
   position: relative;
   text-align: left;
   margin-bottom: 12px;
 }
-.modal-box.comment {
+.modal__box.comment {
   margin-bottom: 20px;
 }
-.modal-input:focus + .modal-input-icon {
+.modal__input:focus + .modal-input-icon {
   fill: $accent-color;
 }
-.modal-box:focus-within {
+.modal__box:focus-within {
   border-color: $accent-color;
 }
-.modal-window-subtitle {
+.modal__window-subtitle {
   font-weight: normal;
   font-size: 12px;
   line-height: 1.17;
@@ -97,7 +99,7 @@ textarea {
   color: $primary-text-color;
   margin-bottom: 4px;
 }
-.modal-input-icon {
+.modal__input-icon {
   position: absolute;
   top: 30px;
   left: 12px;
@@ -108,7 +110,7 @@ textarea {
     cursor: pointer;
   }
 
-  .modal-input:hover + & {
+  .modal__input:hover + & {
     fill: $accent-color;
   }
 }
@@ -142,13 +144,14 @@ textarea {
   border-radius: 4px;
   margin-right: 8px;
 }
-.modal-consent-box input:checked {
-  color: $accent-color;
-}
-.modal-consent-box {
+.modal__consent-box {
   margin-bottom: 30px;
+
+  & input:checked {
+    color: $accent-color;
+  }
 }
-.modal-window-consent {
+.modal__window-consent {
   display: inline-flex;
   align-items: center;
   font-weight: normal;
@@ -157,11 +160,11 @@ textarea {
   letter-spacing: 0.03em;
   color: $primary-text-color;
 }
-.agreement-link {
+.modal__agreement-link {
   color: $accent-color;
   text-decoration: underline;
 }
-.modal-window-submit-button {
+.modal__window-submit-button {
   display: block;
   margin: 0 auto;
   cursor: pointer;
