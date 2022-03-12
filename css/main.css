@@ -143,6 +143,25 @@ textarea:hover {
   cursor: pointer;
 }
 
+.our-team__text, .our-team__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: inherit;
+  color: #212121;
+}
+
+.our-team__title {
+  margin-bottom: 10px;
+}
+
+.our-team__text {
+  font-weight: 400;
+  color: inherit;
+  margin-bottom: 16px;
+}
+
 .header__logo-text {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -670,26 +689,6 @@ textarea:hover {
   background-color: #ffffff;
   padding-top: 30px;
   padding-bottom: 30px;
-}
-
-.our-team__title,
-.our-team__text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: inherit;
-  color: #212121;
-}
-
-.our-team__title {
-  margin-bottom: 10px;
-}
-
-.our-team__text {
-  font-weight: 400;
-  color: inherit;
-  margin-bottom: 16px;
 }
 
 section.our-team {
