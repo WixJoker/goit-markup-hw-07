@@ -5,28 +5,28 @@
   margin-bottom: 30px;
   margin-right: 30px;
   padding: 25px 100px;
-
-&__icon {
+}
+.properties__icon {
   width: 70px;
   height: 70px;
-  }
 }
-&,
+.properties,
 .section-properties {
   padding-bottom: 0;
 }
-& {
+.properties {
   display: flex;
 }
-&__item {
+.properties__item {
   width: 270px;
   justify-content: space-between;
   margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
-&__item:last-child {
-  margin-right: 0;
-}
-&__title {
+.properties__title {
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -36,7 +36,7 @@
   text-transform: uppercase;
   color: $title-color;
 }
-&__text {
+.properties__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;

@@ -1,4 +1,4 @@
-.header-logo-text {
+.header__logo-text {
   font-family: $logo-font-family;
   font-weight: 700;
   font-size: 26px;
@@ -17,7 +17,7 @@
   padding-top: 25px;
   padding-bottom: 25px;
 }
-.header-container {
+.header__container {
   display: flex;
   justify-content: space-between;
 }
@@ -25,16 +25,13 @@
   display: flex;
   align-items: center;
 
-  & .header-link.current {
+  .header__link--current {
     color: $accent-color;
   }
 }
 .header__links-list {
   display: flex;
   align-items: center;
-}
-.header-contacts:last-child {
-  margin-right: 0;
 }
 .header__links-list-item {
   margin-right: 50px;
@@ -48,8 +45,8 @@
   margin-right: 10px;
   fill: currentColor;
 }
-.header-link,
-.header-contacts {
+.header__link,
+.header__contacts {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -60,20 +57,28 @@
 
   transition: color 250ms $timing-function;
 }
-.header-link.current {
+.header__link--current {
   position: relative;
-}
-.header-link.current::after {
-  display: block;
-  bottom: -32px;
-  content: '';
-  height: 4px;
-  width: 100%;
-  background-color: $accent-color;
 
-  position: absolute;
+  &::after {
+    display: block;
+    bottom: -32px;
+    content: '';
+    height: 4px;
+    width: 100%;
+    background-color: $accent-color;
+
+    position: absolute;
+  }
 }
-.header-contacts {
+.header__links-list-item-contacts {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.header__contacts {
   color: inherit;
 }
 .envelope-icon {
