@@ -1,8 +1,6 @@
 .header__logo-text {
   font-family: $logo-font-family;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  @include font(26px, 700, 1.19);
   letter-spacing: inherit;
   color: $logo-color;
   margin-right: 93px;
@@ -49,9 +47,7 @@
 .header__contacts {
   display: flex;
   align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(14px, 500, 1.14);
   letter-spacing: 0.02em;
   color: $title-color;
 
